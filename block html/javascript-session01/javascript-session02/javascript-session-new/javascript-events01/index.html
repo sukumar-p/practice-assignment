@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* div{
+        width: 50%;
+        height: 50%;
+        padding: 5px;
+    } */
+
+        #mainDiv {
+            background-color: red;
+            width: 50%;
+            height: 250px;
+            /* position: absolute;   */
+        }
+
+        .child-div {
+            padding: 5px;
+            /* position: absolute;  */
+        }
+
+        .data-inside {
+            position: absolute;
+            display: inline-block;
+            width: 12%;
+        }
+
+        .settingImage {
+            position: relative;
+        }
+
+        .big-leftArrow {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+        }
+
+        .big-rightArrow {
+            position: absolute;
+            top: 50%;
+            left: 0%;
+        }
+    </style>
+</head>
+
+<body onload="checkDoc()">
+
+    <!-- <div id="mainDiv">
+        <!-- <div class="child-div" id="childDiv" style="background-color: blue; width:150px">B
+            <div style="background-color: green; width:100px">C</div>
+        </div> -->
+    <!-- <span id="newPosition">
+
+        </span> -->
+    <!-- </div>
+    <p class="data-inside"></p>  -->
+
+
+    <!-- <div class="setting-images" id="settingImage"> -->
+    <img src="images/nature.jpeg" width="50%" id="settingImage" class="settingImage">
+    <br>
+    <br>
+    <br>
+
+    <img src="images/bigarrowleft.png" id="bigleftArrow" class="big-rightArrow">
+    <img src="images/bigarrowright.png" id="bigrightArrow" class="big-leftArrow">
+    <!-- </div> -->
+
+
+    <!-- <div class="settingsmall-images" id="settingsmallImage"> -->
+    <img src="images/image.jpeg" width="10%" class="class1">
+    <img src="images/form2.jpg" width="10%" class="class1">
+    <img src="images/form.jpg" width="10%" class="class1">
+    <img src="images/cricket.jpeg" width="10%" class="class1">
+    <img src="images/blank2.jpg" width="10%" class="class1">
+    <img src="images/blank.jpg" width="10%" class="class1">
+    <!-- </div> -->
+
+
+    <script>
+
+        function checkDoc() {
+            alert("doc is ready");
+        }
+
+        
+        
+       
+       
+
+
+        // var newElem = document.getElementById("mainDiv");
+
+
+        var allimages = document.getElementsByClassName("class1");
+        
+        var clickallImages = document.getElementsByClassName("big-rightArrow");
+       
+        clickallImages.addEventListener('click',clickinghandler,true)
+       
+
+        function clickinghandler(e) {          
+            for (i = 0; i < allimages.length; i++) {
+                var changeImage = allimages[i].getAttribute("src");
+                console.log(e);
+                console.log(changeImage);
+                document.getElementById("settingImage").setAttribute("src", changeImage);
+            }
+
+        }
+        //   newElem.addEventListener('click',eventHandler,false)
+
+        // function eventHandler(e){
+        //     console.log(e.clientX,e.clientY);
+        // }
+
+
+
+        // newElem.addEventListener('mouseover', eventHandler)
+
+
+        // // function eventHandler(e) {
+        //     document.getElementById('mainDiv').style.backgroundColor = "pink";
+        //     newElem.style.width = '100%';
+        //     newElem.innerHTML = 'large size';
+        //     console.log(e.clientX, e.clientY);
+        //     console.log(e)
+
+        // }
+
+        // newElem.addEventListener('mouseout', eventHandlerout)
+
+        // function eventHandlerout(e) {
+        //     document.getElementById('mainDiv').style.backgroundColor = "black";
+        //     document.getElementById('mainDiv').style.color = "white";
+        //     // document.getElementById('childDiv').style.backgroundColor="yellow";
+        //     newElem.style.width = '50%';
+        //     newElem.innerHTML = 'small size';
+        //     // console.log(e.clientX,e.clientY);
+        //     // console.log(e)
+
+        // }
+
+        // var Elem= document.getElementById("childDiv");
+        // console.log(Elem);
+        // newElem.addEventListener('mousemove',eventHandlermove)
+
+        // function eventHandlermove(e){
+        //     // document.getElementById('mainDiv').style.backgroundColor="black";
+        //     // document.getElementById('mainDiv').style.color="white";
+        //     // console.log(e.clientX,e.clientY);
+        //     // console.log(e)
+        //     Elem.style.top=e.clientY+'px';
+        //     Elem.style.left=e.clientX+'px';
+        // }
+
+        // var newElem = document.getElementById("mainDiv");
+        // var newArra = [];
+
+        // newElem.addEventListener('click', clickingSlide, true)
+
+
+        // function clickingSlide(e) {
+        //     // for(i=0;i<e.path.length;i++){
+
+        //     //  e.path[0];  
+        //     //  }
+        //     // console.log(e.path[0]);
+        //     // document.getElementById("mainDiv").style.display="block";
+        //     // var newSide=document.getElementsByClassName('.position: absolute;');
+        //     // console.log(newSide);
+
+        //     //newElem.innerHTML="<span id='newPosition'>"+'i love india'+"<br>"+"</span>";
+
+        //     var newElement = document.createElement('span');
+        //     newElement.id = 'newPosition';
+        //     newElem.appendChild(newElement);
+
+        //     var nexPos = document.getElementById("newPosition");
+        //     nexPos.innerHTML = "i love india"
+        //     nexPos.style.position = 'absolute';
+
+        //     // newArra.push(nexPos);
+        //     // var arrra = e.innerHTML;
+
+        //     nexPos.style.color = "blue";
+        //     nexPos.style.top = e.clientY + 'px';
+        //     nexPos.style.left = e.clientX + 'px';
+        //     // var nextElem = newElem.innerHTML;
+        //     // // nextElem.style.display="inlineblock";
+        //     // console.log(newElem);
+        // }
+
+
+
+        // mydisplay()
+
+        // var person = {
+        //     firstName:"John",
+        //     lastName: "Doe"}
+
+        //     function mydisplay(){
+
+
+
+        //     }document.write(person.firstName);
+
+        // var firstSet=document.getElementById("settingImage");
+        // var setImage=document.getElementById("settingsmallImage");
+
+
+        // var allimages = document.getElementsByClassName("class1");
+        // for(var i=0;i<allimages.length;i++){
+        //     allimages[i].addEventListener('click',imageSetting,true)
+        // }
+
+
+        // function imageSetting(e){
+        //     console.log(e);
+
+        //     var changeImage=this.getAttribute("src");
+        //     console.log(this);
+        //     console.log(changeImage);
+        // document.getElementById("settingImage").setAttribute("src",changeImage);
+
+        // }
+        
+
+    </script>
+</body>
+
+</html>

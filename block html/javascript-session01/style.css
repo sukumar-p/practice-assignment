@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+div,ul,p,h1,h2{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    color:blue;
+    /* text-align: center; */
+}
+span{
+    color:brown;
+    font-size: 30px;
+}
+/* ul{
+    text-align: center;
+    list-style-type: circle;
+} */
+form {
+    width: 302px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+#todolist {
+    width: 300px;
+    margin: 10px solid;
+    margin: 10px 10px;
+}
+#todolist li {
+    border-radius: 2px;
+    list-style: none;
+    background: #eee;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    /* position: relative; */
+    text-align: left;
+}
+/* input{
+    float: right;
+}
+button{
+    float: right;
+} */
+#input{
+    float: none;
+}

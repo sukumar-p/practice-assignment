@@ -1,0 +1,15 @@
+.first-image {
+    position: relative;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
